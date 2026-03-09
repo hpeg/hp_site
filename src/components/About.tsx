@@ -1,6 +1,8 @@
+import { AnimatedSection } from "@/components/AnimatedSection"
+
 export function About() {
   return (
-    <section id="about" className="mx-auto max-w-2xl py-16">
+    <AnimatedSection id="about" className="mx-auto max-w-2xl py-16">
       <h2 className="mb-4 text-2xl font-semibold">About Me</h2>
       <p className="text-base leading-relaxed">
         Senior Full Stack Software Engineer with significant experience
@@ -10,6 +12,6 @@ export function About() {
         owning features end-to-end, contributing to technical direction, and
         mentoring.
       </p>
-    </section>
+    </AnimatedSection>
   )
 }

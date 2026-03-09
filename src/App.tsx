@@ -13,7 +13,7 @@ import { STATS } from "@/data/stats"
 export function App() {
   return (
     <div className="flex flex-col items-center px-6">
-      <nav className="sticky top-0 z-50 flex w-full items-center justify-between border-b border-border bg-background px-4 py-4 text-sm backdrop-blur-sm">
+      <nav className="animate-slide-down sticky top-0 z-50 flex w-full items-center justify-between border-b border-border bg-background px-4 py-4 text-sm backdrop-blur-sm">
         <div className="flex gap-6">
           <a href="#home" className="hover:underline">
             Home
