@@ -1,19 +1,36 @@
-import { Button } from "@/components/ui/button"
+import { About } from "@/components/About"
+import { Contact } from "@/components/Contact"
+import { Hero } from "@/components/Hero"
+import { Skills } from "@/components/Skills"
+import { ThemeToggle } from "@/components/ThemeToggle"
 
 export function App() {
   return (
-    <div className="flex min-h-svh p-6">
-      <div className="flex max-w-md min-w-0 flex-col gap-4 text-sm leading-loose">
-        <div>
-          <h1 className="font-medium">Project ready!</h1>
-          <p>You may now add components and start building.</p>
-          <p>We&apos;ve already added the button component for you.</p>
-          <Button className="mt-2">Button</Button>
+    <div className="flex flex-col items-center px-6">
+      <nav className="flex w-full items-center justify-between px-4 py-4 text-sm">
+        <div className="flex gap-6">
+          <a href="#home" className="hover:underline">
+            Home
+          </a>
+          <a href="#about" className="hover:underline">
+            About
+          </a>
+          <a href="#skills" className="hover:underline">
+            Skills
+          </a>
+          <a href="#contact" className="hover:underline">
+            Contact
+          </a>
         </div>
-        <div className="font-mono text-xs text-muted-foreground">
-          (Press <kbd>d</kbd> to toggle dark mode)
-        </div>
-      </div>
+        <ThemeToggle />
+      </nav>
+      <Hero />
+      <About />
+      <Skills />
+      <Contact />
+      <footer className="py-8 text-xs text-muted-foreground">
+        <p>This is a footer.</p>
+      </footer>
     </div>
   )
 }
