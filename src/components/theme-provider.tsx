@@ -1,8 +1,7 @@
 /* eslint-disable react-refresh/only-export-components */
 import * as React from "react"
-
-type Theme = "dark" | "light" | "system"
-type ResolvedTheme = "dark" | "light"
+import type { Theme, ResolvedTheme } from "./theme-constants"
+import { COLOR_SCHEME_QUERY, THEME_VALUES } from "./theme-constants"
 
 type ThemeProviderProps = {
   children: React.ReactNode
@@ -15,9 +14,6 @@ type ThemeProviderState = {
   theme: Theme
   setTheme: (theme: Theme) => void
 }
-
-const COLOR_SCHEME_QUERY = "(prefers-color-scheme: dark)"
-const THEME_VALUES: Theme[] = ["dark", "light", "system"]
 
 const ThemeProviderContext = React.createContext<
   ThemeProviderState | undefined
