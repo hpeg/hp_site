@@ -1,4 +1,3 @@
-import * as React from "react"
 import { Card } from "@/components/ui/card"
 import { AnimatedSection } from "@/components/AnimatedSection"
 import { AnimatedListItem } from "@/components/AnimatedListItem"
